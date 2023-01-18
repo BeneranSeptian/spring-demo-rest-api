@@ -11,6 +11,9 @@ group = "com.seftian"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
+springBoot {
+    this.mainClass.value("com.seftian.demo.DemoApplication.kt")
+}
 
 repositories {
     mavenCentral()
