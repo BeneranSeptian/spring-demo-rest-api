@@ -1,0 +1,19 @@
+@startuml
+
+actor "Septian" as user
+node "demo app" {
+    component "Controller" as controller
+    component "Service" as service
+    component "Repository" as repository
+}
+
+database "PostgreSQL demoapp" as database
+
+user <--> controller
+controller <--> service
+service <--> repository
+repository <--> database
+
+
+
+@enduml
