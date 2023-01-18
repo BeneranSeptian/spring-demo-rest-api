@@ -36,6 +36,8 @@ dependencies {
     implementation("org.springframework.security:spring-security-config")
     implementation("org.springframework.security:spring-security-web")
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5")
+    implementation("org.springframework.boot:spring-boot-maven-plugin:3.0.1")
+
 }
 
 tasks.withType<KotlinCompile> {
